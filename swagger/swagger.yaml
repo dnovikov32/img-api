@@ -1,0 +1,8 @@
+openapi: 3.0.3
+info:
+  title: Img api
+  version: 0.0.1
+servers:
+  - url: https://img-api.docker/api/v1
+paths:
+
