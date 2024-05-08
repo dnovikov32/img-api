@@ -1,0 +1,11 @@
+services:
+  app.api.common.stage.validate_api_request:
+    class: Dnovikov32\HttpProcessBundle\Request\Stage\ValidateApiRequest
+    arguments:
+      - '@validator'
+
+  app.api.common.stage.create_response.success:
+    class: Dnovikov32\HttpProcessBundle\Response\Stage\CreateApiResponse
+    arguments:
+      - '@serializer'
+      - '@http_process.response.ok'

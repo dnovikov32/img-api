@@ -1,0 +1,10 @@
+services:
+  app.api.image.upload.stage.transform_http_to_api_request:
+    class: Dnovikov32\HttpProcessBundle\Request\Stage\CreateApiRequest
+    arguments:
+      - '@app.api.image.upload.service.request_transformer'
+
+#  app.api.image.upload.stage.upload_image:
+#    class: App\Api\Common\Stage\UploadImage
+#    arguments:
+#      - '@app.api.image.upload.service.file_uploader'

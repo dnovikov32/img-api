@@ -1,0 +1,9 @@
+services:
+  app.api.image.upload.pipeline:
+    class: League\Pipeline\Pipeline
+    arguments:
+      - ~
+      - '@app.api.image.upload.stage.transform_http_to_api_request'
+      - '@app.api.common.stage.validate_api_request'
+#      - '@app.api.catalog.category.common.stage.transform_entity_to_api_response'
+      - '@app.api.common.stage.create_response.success'

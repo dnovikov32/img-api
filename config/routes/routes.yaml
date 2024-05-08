@@ -1,5 +1,4 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+app.api.image.upload.save:
+  path: /api/img-api/v1/image/upload
+  defaults: { _controller: app.api.image.upload.controller::index }
+  methods: [POST]

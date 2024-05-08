@@ -1,0 +1,3 @@
+POST http://img-api.docker/api/img-api/v1/image/upload
+
+###

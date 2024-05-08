@@ -1,0 +1,6 @@
+services:
+  app.api.image.upload.service.request_transformer:
+    class: Dnovikov32\HttpProcessBundle\Request\Transformer\BodyRequestTransformer
+    arguments:
+      - '@serializer'
+      - 'App\Api\Image\Upload\Request\Request'

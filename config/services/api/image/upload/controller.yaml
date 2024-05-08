@@ -1,0 +1,8 @@
+services:
+  app.api.image.upload.controller:
+    class: Dnovikov32\HttpProcessBundle\Controller\Controller
+    bind:
+      $pipeline: '@app.api.image.upload.pipeline'
+    tags: [ 'controller.service_arguments' ]
+    calls:
+      - setContainer: ['@service_container']
